@@ -3,6 +3,12 @@
     margin: 0 auto;
 }
 
+.text{
+    &--center{
+        text-align: center;
+    }
+}
+
 .padding{ padding: $space-unit; }
 .padding-x{ padding-right: $space-unit; padding-left: $space-unit;}
 .padding-y{ padding-top: $space-unit; padding-bottom: $space-unit; }
@@ -26,18 +32,27 @@
 
 .flex {
     display: flex;
-  
-    &--row {
-        flex-direction: row;
+
+    &--gap {
+        gap: $space-quarter;
     }
 
-    &--column {
+    &--direction-column {
         flex-direction: column;
     }
 
-    &--end{
+    &--justify-center {
+        justify-content: center;
+    }
+
+    &--justify-space-between {
+        justify-content: space-between;
+    }
+
+    &--justify-end{
         justify-content: flex-end;
     }
 
-  }
+}
+
   

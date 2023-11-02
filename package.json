@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "feather-icons": "^4.29.1",
-    "keen-slider": "^6.8.6"
+    "keen-slider": "^6.8.6",
+    "stylelint-selector-bem-pattern": "^3.0.1"
   }
 }

@@ -30,7 +30,7 @@ $box-width-l: calc((($max-content-width / 5) - (2 * $hero-gap)));
         grid-row: auto / span 1;
         grid-column: auto / span 1;
 
-        &--2x2{
+        &--featured{
             grid-row: auto/span 2;
             grid-column: auto/span 2;
         }
