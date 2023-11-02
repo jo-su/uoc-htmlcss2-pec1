@@ -1,0 +1,11 @@
+$font-variation-axis: (
+ mono: "MONO",
+ casual:  "CASL",
+ weight: "wght",
+ slant: "slnt",
+ cursive: "CRSV"
+);
+
+@function variable-font($axis, $value){
+  @return map-get($font-variation-axis, $axis) $value;
+}

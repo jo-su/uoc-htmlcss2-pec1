@@ -1,27 +1,111 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Cocina & Gastronomía</title>
   </head>
+  <script src="/node_modules/feather-icons/dist/feather.min.js"></script>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+    <include src="./views/header.html"></include>
+
+    <div class="hero hero_contained max-width margin-b">
+      <div class="card card--overlay card__text padding hero__area hero__area--2x2">
+        <p>La cocina es para divertirse: un hecho cultural y, también, un espacio lúdico donde jugar e interpretar</p>
+        <p>Joan Roca</p>
+      </div>
+      <div class="card hero__area">
+        <img class="card__image" src="/src/assets/images/food-photos/sushi1.png" />
+      </div>
+      <div class="card hero__area hero__area--hidden-m">
+        <img class="card__image" src="/src/assets/images/food-photos/txuleta.png" />
+      </div>
+      <div class="card hero__area">
+        <img class="card__image" src="/src/assets/images/food-photos/guacamole.png" />
+      </div>
+      <div class="card hero__area hero__area--hidden-s hero__area--hidden-m">
+        <img class="card__image" src="/src/assets/images/food-photos/olive-oil-ice-cream.png" />
+      </div>
+      <div class="card card--overlay hero__area hero__area--horizontal card__text padding">
+        <p class="card__text">
+          La cocina es para divertirse: un hecho cultural y, también, un espacio lúdico donde jugar e interpretar
+          <br>
+          <br>
+          <span>Joan Roca</span>
+        </p>
+      </div>
     </div>
+
+    <section class="card card--overlay section max-width padding margin-b" id="mis-recetas">
+      <h2 class="section__title">Mis recetas</h2>
+      <p class="section__subtitle">Este es un recopilatorio de mis recetas favoritas. Lorem ipsum dolor sit amet asñdkfj ñasddlkfj añsdkf añsdfalkd jhfalk djfhaldkjfha lkdjhflkajd  f hjas hadshfj hdjfh  djfh  f lakdjfhf </p>
+      <div class="keen-slider" id="mis-recetas-slider">
+        <div class="card card--border card__composition keen-slider__slide">
+          <img class="card__composition__img" src="/src/assets/images/food-photos/meatballs.png">
+          <h3 class="card__composition__tit padding-x">Albóndigas estilo IKEA</h3>
+          <p class="card__composition__sub padding-x">¿Te falta tu dosis de albóndigas de IKEA? Hemos creado una receta para que recrees este delicioso platillo en la comodidad de tu hogar.</p>
+          <a class="card__composition__act button button--small margin-x" href="https://twitter.com/IKEAUK/status/1252269467515617280" target="_blank">Receta Ikea<i data-feather="arrow-up-right"></i></a>
+        </div>
+        <div class="card card--border card__composition keen-slider__slide">
+          <img class="card__composition__img" src="/src/assets/images/food-photos/olive-oil-ice-cream.png">
+          <h3 class="card__composition__tit padding-x">Helado de aceite de oliva</h3>
+          <p class="card__composition__sub padding-x">En el restaurante Ecco de Atlanta, un postre destaca sobre el resto: un helado de aceite de oliva salado. Inspirada en ese plato en sabor pero no en método, esta delicia congelada no requiere una máquina para hacer helados.</p>
+          <a class="card__composition__act button button--small margin-x" href="https://cooking.nytimes.com/recipes/1022955-no-churn-olive-oil-ice-cream-with-hot-fudge" target="_blank">Receta New York Times <i data-feather="arrow-up-right"></i></a>
+        </div>
+        <div class="card card--border card__composition keen-slider__slide">
+          <img class="card__composition__img" src="/src/assets/images/food-photos/pizza.png">
+          <h3 class="card__composition__tit padding-x">Pizza casera</h3>
+          <p class="card__composition__sub padding-x">No importa la época del año ni el momento del día: una pizza siempre apetece, y si aprendemos a hacerlas bien en casa tendremos un repetorio infinito de ingredientes con las que prepararlas.</p>
+          <a class="card__composition__act button button--small margin-x" href="https://www.directoalpaladar.com/recetario/31-recetas-de-pizza-una-pizza-para-cada-dia-del-mes" target="_blank">Receta Directo Al Paladar<i data-feather="arrow-up-right"></i></a>
+        </div>
+      </div>
+      <span class="flex flex--end align-r">
+        <button id="recetasPrev" class="button button--small button--group-first">
+          <i data-feather="arrow-left"></i>
+        </button>
+        <button id="recetasNext" class="button button--small button--group-last">
+          <i data-feather="arrow-right"></i>
+        </button>
+      </span>
+    </section>
+
+    <section class="card card--overlay section max-width padding" id="experiencias-gastronomicas">
+      <h2 class="section__title">Experiencias gastronómicas</h2>
+      <p class="section__subtitle">Este es un recopilatorio de mis recetas favoritas. Lorem ipsum dolor sit amet asñdkfj ñasddlkfj añsdkf añsdfalkd jhfalk djfhaldkjfha lkdjhflkajd  f hjas hadshfj hdjfh  djfh  f lakdjfhf </p>
+      <div class="keen-slider" id="experiencias-gastronomicas-slider" >
+        <div class="card card--border card__composition keen-slider__slide">
+          <img class="card__composition__img" src="/src/assets/images/food-photos/atun.png">
+          <h3 class="card__composition__tit padding-x">Kofradia</h3>
+          <p class="card__composition__sub padding-x">Bienvenido a la casa de los pescadores vascos, donde te invitamos a conocer, experimentar y  saborear el pescado de bajura de Euskadi.</p>
+          <a class="card__composition__act button button--small margin-x" href="https://kofradia.eus" target="_blank">Web Kofradia <i data-feather="arrow-up-right"></i></a>
+        </div>
+        <div class="card card--border card__composition keen-slider__slide">
+          <img class="card__composition__img" src="/src/assets/images/food-photos/iguzkian.png">
+          <h3 class="card__composition__tit padding-x">Creperie Iguzkian</h3>
+          <p class="card__composition__sub padding-x">Aquí se puede disfrutar de crepes, ensaladas, mejillones a la plancha, helados y sus diversas formas en un ambiente cálido y agradable.</p>
+          <a class="card__composition__act button button--small margin-x" href="https://www.creperiebrasserieiguzkian.fr/es/" target="_blank">Web Iguzkian <i data-feather="arrow-up-right"></i></a>
+        </div>
+        <div class="card card--border card__composition keen-slider__slide">
+          <img class="card__composition__img" src="/src/assets/images/food-photos/topa.png">
+          <h3 class="card__composition__tit padding-x">TOPA Sukaldería</h3>
+          <p class="card__composition__sub padding-x">TOPA Sukaldería celebra los siglos de historia que nos unen a vascos y latinoamericanos. Ambas gastronomías se encuentran con el deseo de disfrutar, descubrir y pasarlo bien.</p>
+          <a class="card__composition__act button button--small margin-x" href="https://topasukalderia.com" target="_blank">Web Topa Sukaldería <i data-feather="arrow-up-right"></i></a>
+        </div>
+      </div>
+      <span class="flex flex--end align-r">
+        <button id="experienciasPrev" class="button button--small button--group-first">
+          <i data-feather="arrow-left"></i>
+        </button>
+        <button id="experienciasNext" class="button button--small button--group-last">
+          <i data-feather="arrow-right"></i>
+        </button>
+      </span>
+    </section>
+
     <include src="./views/footer.html"></include>
+    
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>

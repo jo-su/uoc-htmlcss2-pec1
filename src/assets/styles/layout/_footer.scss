@@ -1,0 +1,10 @@
+.footer { 
+    font-size: 1rem; 
+    background-color: $overlay;
+    border-radius: $border-radius $border-radius 0 0;
+  
+    &__note {
+      font-variation-settings: variable-font(weight, 400), variable-font(slant, -10);
+    }
+  
+  }

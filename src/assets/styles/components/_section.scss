@@ -1,0 +1,16 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: $space-half;
+  
+  &__title { 
+    color: $primary;
+    font-variation-settings: variable-font(casual, 0.75);
+  }
+
+  &__subtitle {
+    color: $black;
+  }
+  
+}
+

@@ -6,7 +6,6 @@
 /**
  * Import variables
  */
-
 @import "variables";
 
 /**
@@ -18,12 +17,15 @@
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
-@import "layouts/home";
+@import "utils/helpers";
+@import "utils/functions";
+@import "base/reset";
+@import "layout/footer";
+@import "layout/header";
+@import "components/button";
+@import "components/card";
+@import "components/hero";
+@import "components/section";
 
 /**
  * Do NOT include anything else in this file!

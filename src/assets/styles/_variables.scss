@@ -1,12 +1,38 @@
 @use "sass:color";
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
+@font-face {
+  font-family: 'Recursive';
+  src: url(/src/assets/fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf) format('truetype');
+}
+
+$font-family-sans-serif: Recursive, sans-serif;
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+$primary: #bc2c2c;
+$secondary: #c25a5a;
+$tertiary: #ffcbc5;
+$disabled: rgb(149, 149, 149);
 
-$mqMinWidth: 420px;
+$black: #000000;
+$white: #ffffff;
+
+$overlay: rgba(255, 255, 255, 0.35);
+
+$border-radius: 1rem;
+
+$base-padding: 2rem;
+
+$space-unit: 2rem;
+$space-half: calc($space-unit / 2);
+$space-quarter: calc($space-unit / 4);
+
+$max-content-width: min(90vw, 1300px);
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;

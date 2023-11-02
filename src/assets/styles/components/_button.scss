@@ -1,0 +1,54 @@
+.button {
+    display: flex;
+    padding: $space-half $space-unit;
+    border-radius: 2rem;
+    border: 2px solid $primary;
+    gap: $space-half;
+    color: $primary;
+    font-weight: 500;
+    transition: 0.75s;
+    stroke-width: 2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: $overlay;
+
+
+    &--small{
+        padding: $space-quarter $space-half;
+        gap: $space-quarter;
+    }
+
+    &--group-first{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: solid 1px $primary;
+    }
+
+    &--group-inside{
+        border-radius: 0;
+        border-right: solid 1px $primary;
+        border-left: solid 1px $primary;
+    }
+
+    &--group-last{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: solid 1px $primary;
+    }
+
+    &:hover{
+        font-weight: 600;
+        color: $white;
+        background-color: $primary;
+        stroke-width: 3;
+    }
+
+    &--row{
+        flex-direction: row;
+    }
+
+    &--col{
+        flex-direction: column;
+    }
+}
