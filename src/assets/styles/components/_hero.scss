@@ -1,4 +1,4 @@
-$hero-gap: calc($base-padding / 2);
+$hero-gap: $space-half;
 
 $box-width-xs: calc(($max-content-width / 2));
 $box-width-s: calc((($max-content-width / 3) - ($hero-gap)));
